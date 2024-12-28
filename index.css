@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source sans pro';
+}
+
+.post {
+    width: 375px;
+}
+
+.post-img {
+    max-width: 100%;
+}
+
+.post-header {
+    display: flex;
+    gap: 10px;
+}
+
+ .post-header h2,
+ .post-header p {
+    margin: 0;
+} 
+
+.post-header h2 {
+
+}
+
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
