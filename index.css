@@ -74,6 +74,11 @@ body {
     height: 23px;
 }
 
+.icon:focus,
+.icon:hover {
+    opacity: 0.8;
+}
+
 .padding-small {
     padding: 10px;
 }
