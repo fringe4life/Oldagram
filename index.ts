@@ -1,11 +1,11 @@
-import { Post, posts } from './posts.ts'
+import { type Post, posts } from './posts.ts'
 
 
 const app = document.getElementById('app')
 
 app?.addEventListener('dblclick', handleLike)
 const displayPosts = () => { 
-    const html = posts.map(post => renderPost(post)).join('')
+    const html = posts.map(post => render(post)).join('')
     if (app) {
         app.innerHTML = html
     }
@@ -27,14 +27,18 @@ function handleLike(e: Event) {
         }
     }
 }
-
-function renderPost({name,avatar,likes,username,comment,post }: Post) { 
-    return `<section class="post">
+/**
+ * 
+ * @param it takes a post object
+ * @returns the html string to be rendered for it
+ */
+function render({name,avatar,likes,username,comment,post }: Post) { 
+    return `<article class="post">
                 <header class='post-header padding-small'>
                     <img src="${avatar}" alt="${name}" class='avatar'>
                     <div>
                         <h2>${name}</h2>
-                        <p>${username} - ${location}</p>
+                        <p>${username}</p>
                     </div>
                 </header>
                 <img src="${post}" alt="Post" class='post-img click-to-like'>
@@ -45,7 +49,7 @@ function renderPost({name,avatar,likes,username,comment,post }: Post) {
                 </div>
                 <p class='post-paragraph' id='like'><strong>${likes} likes</strong></p>
                 <p class='post-paragraph'><strong>${username}</strong> ${comment}</p>
-        </section>`
+        </article>`
 }
 /**
  * This method updates the number of likes for a given post instead of re-rendering the entire post section.

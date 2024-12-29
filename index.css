@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Source Sans 3';
+    font-family: 'Source Sans 3', sans-serif;
     font-size: 12px;
     width: 375px;
     margin-inline: auto;
@@ -43,7 +43,7 @@ body {
 }
 
 .post ~ .post  {
-    margin-top: 15px;
+    border-top: 15px solid #edecec;
 }
 
 .post-img {
