@@ -1,89 +1,97 @@
 @font-face {
-    font-family: 'Source Sans 3';
-    src: url('Source_Sans_3/SourceSans3-VariableFont_wght.ttf');
+	font-family: "Source Sans 3";
+	src: url("Source_Sans_3/SourceSans3-VariableFont_wght.ttf") format("truetype");
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 12px;
-    width: 375px;
-    margin-inline: auto;
+	/* layout */
+	margin: 0;
+	padding: 0;
+	margin-inline: auto;
+
+	/* typography */
+	font-family: "Source Sans 3", sans-serif;
+	font-size: 0.75rem;
+	width: 23.4375rem;
 }
+/* common layout */
+.flex-with-gap {
+	display: flex;
+	gap: 0.33em;
+}
+
 /* Typography */
 
- .post-header h2,
- .post-header p {
-    margin: 0;
-} 
+.post-header h2,
+.post-header p {
+	margin: 0;
+}
 
 .post-header h2 {
-    font-weight: 700;
-    font-size: inherit;
+	font-weight: 700;
+	font-size: inherit;
 }
 
 .post-header p {
-    font-weight: 400;
+	font-weight: 400;
 }
 /* Layout */
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #C6C6C6;
+	/* layout */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	/* styling */
+	border-bottom: 1px solid #c6c6c6;
 }
 
 .logo {
-    /* display: block; */
-    width: 130px;
-    height: 50px;
+	width: 8.125rem;
+	height: 3.125rem;
 }
 
-.post ~ .post  {
-    border-top: 15px solid #edecec;
+/* POSTS */
+.post ~ .post {
+	border-top: 0.5em solid #edecec;
 }
 
 .post-img {
-    max-width: 100%;
+	max-width: 100%;
+	cursor: pointer;
 }
 
-.post-header {
-    display: flex;
-    gap: 5px;
-    /* padding: 10px; */
-}
-
+/* ICONS and IMAGES */
 .avatar {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    overflow: hidden;
+	width: 2.1875rem;
+	height: 2.1875rem;
+	border-radius: 50%;
+	overflow: hidden;
 }
 
 .icons {
-    margin-top: 10px;
-    /* padding: 10px; */
-    display: flex;
-    gap: 5px;
+	margin-top: 0.625rem;
 }
 
 .icon {
-    height: 23px;
+	height: 1.5rem;
+
+	/* interactivity */
+	transition: opacity .25s ease-in-out;
+	cursor: pointer;
 }
 
 .icon:focus,
 .icon:hover {
-    opacity: 0.8;
+	opacity: 0.4;
 }
 
 .padding-small {
-    padding: 10px;
+	padding: 0.625rem;
 }
 
 .post-paragraph {
-    margin: 10px 0;
-    padding-left: 10px;
+	margin: 0.625rem 0;
+	padding-left: 0.625rem;
 }

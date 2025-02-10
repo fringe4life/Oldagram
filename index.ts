@@ -34,7 +34,7 @@ function handleLike(e: Event) {
  */
 function render({name,avatar,likes,username,comment,post }: Post) { 
     return `<article class="post">
-                <header class='post-header padding-small'>
+                <header class='post-header padding-small flex-with-gap'>
                     <img src="${avatar}" alt="${name}" class='avatar'>
                     <div>
                         <h2>${name}</h2>
@@ -42,7 +42,7 @@ function render({name,avatar,likes,username,comment,post }: Post) {
                     </div>
                 </header>
                 <img src="${post}" alt="Post" class='post-img click-to-like'>
-                <div class='icons padding-small'>
+                <div class='icons padding-small flex-with-gap'>
                     <img src="images/icon-heart.png" alt="Like" class='icon click-to-like'>
                     <img src="images/icon-comment.png" alt="Like" class='icon'>
                     <img src="images/icon-dm.png" alt="Like" class='icon'>
@@ -52,7 +52,8 @@ function render({name,avatar,likes,username,comment,post }: Post) {
         </article>`
 }
 /**
- * This method updates the number of likes for a given post instead of re-rendering the entire post section.
+ * @abstract This method updates the number of likes for a given post 
+ *           instead of re-rendering the entire post section.
  * @param likes the current number of likes
  * @param post the post object to update
  * @param parent the parent element of the post section to update the likes in 

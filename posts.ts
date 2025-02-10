@@ -36,4 +36,4 @@ type Post = {
     comment: string,
     likes: number
 }
-export { posts, Post  }
+export { posts, type Post  }
