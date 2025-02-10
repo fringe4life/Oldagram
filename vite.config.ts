@@ -10,5 +10,5 @@ export default defineConfig({
         },
 	},
 	// include all images in the dist directory for serving them as static assets.
-	assetsInclude: ['images/**.*'],
+	assetsInclude: ['./images/**.*'],
 }) satisfies UserConfig
