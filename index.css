@@ -3,6 +3,12 @@
 	src: url("Source_Sans_3/SourceSans3-VariableFont_wght.ttf") format("truetype");
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body {
 	/* layout */
 	margin: 0;
