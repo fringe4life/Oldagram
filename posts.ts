@@ -1,10 +1,20 @@
+
+
+import avatarCourbet from './images/avatar-courbet.jpg';
+import avatarVangogh from './images/avatar-vangogh.jpg';
+import avatarDucreux from './images/avatar-ducreux.jpg';
+
+import postCourbet from './images/post-courbet.jpg';
+import postVangogh from './images/post-vangogh.jpg';
+import postDucreux from './images/post-ducreux.jpg';
+
 const posts = [
     {
         name: "Vincent van Gogh",
         username: "vincey1853",
         location: "Zundert, Netherlands",
-        avatar: "images/avatar-vangogh.jpg",
-        post: "images/post-vangogh.jpg",
+        avatar: avatarVangogh,
+        post: postVangogh,
         comment: "just took a few mushrooms lol",
         likes: 21
     },
@@ -12,8 +22,8 @@ const posts = [
         name: "Gustave Courbet",
         username: "gus1819",
         location: "Ornans, France",
-        avatar: "images/avatar-courbet.jpg",
-        post: "images/post-courbet.jpg",
+        avatar: avatarCourbet,
+        post: postCourbet,
         comment: "i'm feelin a bit stressed tbh",
         likes: 4
     },
@@ -21,8 +31,8 @@ const posts = [
         name: "Joseph Ducreux",
         username: "jd1735",
         location: "Paris, France",
-        avatar: "images/avatar-ducreux.jpg",
-        post: "images/post-ducreux.jpg",
+        avatar: avatarDucreux,
+        post: postDucreux,
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
         likes: 152
     }

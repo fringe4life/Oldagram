@@ -1,15 +1,8 @@
 import { type Post, posts } from './posts.ts'
 
-import avatarCourbet from './images/avatar-courbet.jpg';
-import avatarLeonard from './images/avatar-leonard.jpg';
-import avatarMarie from './images/avatar-marie.jpg';
-import avatarNicolas from './images/avatar-nicolas.jpg';
-import avatarThibault from './images/avatar-thibault.jpg';
-import postCourbet from './images/post-courbet.jpg';
-import postLeonard from './images/post-leonard.jpg';
-import postMarie from './images/post-marie.jpg';
-import postNicolas from './images/post-nicolas.jpg';
-import postThibault from './images/post-thibault.jpg';
+import iconDM from './images/icon-dm.png'
+import iconCOmment from './images/icon-comment.png'
+import iconHeart from './images/icon-heart.png'
 
 const app = document.getElementById('app')
 
@@ -53,9 +46,9 @@ function render({name,avatar,likes,username,comment,post }: Post) {
                 </header>
                 <img src="${post}" alt="Post" class='post-img click-to-like'>
                 <div class='icons padding-small flex-with-gap'>
-                    <img src="images/icon-heart.png" alt="Like" class='icon click-to-like'>
-                    <img src="images/icon-comment.png" alt="Like" class='icon'>
-                    <img src="images/icon-dm.png" alt="Like" class='icon'>
+                    <img src=${iconHeart} alt="Like" class='icon click-to-like'>
+                    <img src=${iconCOmment} alt="comment" class='icon'>
+                    <img src=${iconDM} alt="direct message" class='icon'>
                 </div>
                 <p class='post-paragraph' id='like'><strong>${likes} likes</strong></p>
                 <p class='post-paragraph'><strong>${username}</strong> ${comment}</p>

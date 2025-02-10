@@ -9,6 +9,4 @@ export default defineConfig({
             input: ['index.html'],
         },
 	},
-	// include all images in the dist directory for serving them as static assets.
-	assetsInclude: ['./images/**.*'],
 }) satisfies UserConfig
