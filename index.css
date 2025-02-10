@@ -12,7 +12,7 @@ body {
 	/* typography */
 	font-family: "Source Sans 3", sans-serif;
 	font-size: 0.75rem;
-	width: 23.4375rem;
+	width: min(100%, 23.4375rem);
 }
 /* common layout */
 .flex-with-gap {
