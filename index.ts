@@ -1,5 +1,15 @@
 import { type Post, posts } from './posts.ts'
 
+import avatarCourbet from './images/avatar-courbet.jpg';
+import avatarLeonard from './images/avatar-leonard.jpg';
+import avatarMarie from './images/avatar-marie.jpg';
+import avatarNicolas from './images/avatar-nicolas.jpg';
+import avatarThibault from './images/avatar-thibault.jpg';
+import postCourbet from './images/post-courbet.jpg';
+import postLeonard from './images/post-leonard.jpg';
+import postMarie from './images/post-marie.jpg';
+import postNicolas from './images/post-nicolas.jpg';
+import postThibault from './images/post-thibault.jpg';
 
 const app = document.getElementById('app')
 
